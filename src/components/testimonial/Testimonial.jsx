@@ -38,15 +38,15 @@ const testimonialData = [
   },
   {
     message:
-      "Andres Rendon es una persona muy dedicada, siempre busca hacer las cosas bien y se nota su pasión por lo que hace.",
-    quote: `Trabajar con él ha sido una experiencia muy positiva.`,
+      "Andres Rendon es una persona muy dedicada, siempre busca hacer las cosas bien y se nota su pasión por lo que hace. Su enfoque meticuloso y su atención al detalle garantizan resultados de alta calidad en cada tarea que emprende.",
+    quote: `Trabajar con él ha sido una experiencia muy positiva. Su actitud proactiva y su capacidad para trabajar en equipo lo convierten en un recurso valioso para cualquier proyecto tecnológico.`,
     name: "Andres Sáenz",
     designation: "Software Engineer at AOACOLOMBIA SAS"
   },
   {
     message:
       "Trabajar con Rendón ha sido una experiencia excelente. Es una persona comprometida, con gran capacidad para resolver problemas y aportar ideas innovadoras en cada proyecto.",
-    quote: "",
+    quote: "Su habilidad para analizar desafíos complejos y proponer soluciones efectivas es realmente destacable. Su actitud positiva y su disposición para colaborar hacen que sea un placer trabajar junto a él en cualquier iniciativa.",
     name: "James Navarro",
     designation: "Software Engineer at AOACOLOMBIA SAS"
   },
