@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return {
-    base: "/", // 👈 Esto es lo que Render necesita
+    base: "./", // 👈 Esto es lo que Render necesita
     plugins: [react(), tailwindcss()],
     server: {
       open: true,
