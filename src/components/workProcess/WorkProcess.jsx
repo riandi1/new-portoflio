@@ -1,0 +1,70 @@
+import WorkSteps from "./WorkSteps";
+
+const workStepData = [
+  {
+    id: 1,
+    title: "Análisis y Arquitectura",
+    description:
+      "Inicio cada proyecto entendiendo las necesidades del cliente y definiendo una arquitectura escalable que garantice rendimiento y estabilidad. Diseño la estructura del backend, los flujos de datos y las integraciones necesarias.",
+    svgPath:
+      "M9.33333 21.3334C9.86377 21.3334 10.3725 21.1227 10.7475 20.7476C11.1226 20.3726 11.3333 19.8638 11.3333 19.3334C11.3398 19.2669 11.3398 19.1999 11.3333 19.1334L15.0533 15.4134H15.36H15.6667L17.8133 17.5601C17.8133 17.5601 17.8133 17.6267 17.8133 17.6667C17.8133 18.1972 18.024 18.7059 18.3991 19.081C18.7742 19.456 19.2829 19.6667 19.8133 19.6667C20.3438 19.6667 20.8525 19.456 21.2275 19.081C21.6026 18.7059 21.8133 18.1972 21.8133 17.6667V17.5601L26.6667 12.6667C27.0622 12.6667 27.4489 12.5495 27.7778 12.3297C28.1067 12.1099 28.363 11.7976 28.5144 11.4321C28.6658 11.0667 28.7054 10.6645 28.6282 10.2766C28.5511 9.88861 28.3606 9.53224 28.0809 9.25253C27.8012 8.97283 27.4448 8.78235 27.0568 8.70518C26.6689 8.62801 26.2668 8.66761 25.9013 8.81899C25.5358 8.97036 25.2235 9.22671 25.0037 9.55561C24.784 9.88451 24.6667 10.2712 24.6667 10.6667C24.6602 10.7333 24.6602 10.8002 24.6667 10.8667L19.8533 15.6801H19.64L17.3333 13.3334C17.3333 12.803 17.1226 12.2943 16.7475 11.9192C16.3725 11.5441 15.8638 11.3334 15.3333 11.3334C14.8029 11.3334 14.2942 11.5441 13.9191 11.9192C13.544 12.2943 13.3333 12.803 13.3333 13.3334L9.33333 17.3334C8.8029 17.3334 8.29419 17.5441 7.91912 17.9192C7.54405 18.2943 7.33333 18.803 7.33333 19.3334C7.33333 19.8638 7.54405 20.3726 7.91912 20.7476C8.29419 21.1227 8.8029 21.3334 9.33333 21.3334Z",
+  },
+  {
+    id: 2,
+    title: "Desarrollo Backend",
+    description:
+      "Desarrollo APIs seguras y escalables con Laravel y Node.js, integrando scraping, RPA y automatización de procesos. Optimizando consultas y asegurando un rendimiento eficiente en bases de datos como MySQL y PostgreSQL.",
+    svgPath:
+      "M21.3333 18.6667H10.6667C10.313 18.6667 9.97391 18.8072 9.72386 19.0573C9.47381 19.3073 9.33333 19.6465 9.33333 20.0001C9.33333 20.3537 9.47381 20.6928 9.72386 20.9429C9.97391 21.1929 10.313 21.3334 10.6667 21.3334H21.3333C21.687 21.3334 22.0261 21.1929 22.2761 20.9429C22.5262 20.6928 22.6667 20.3537 22.6667 20.0001C22.6667 19.6465 22.5262 19.3073 22.2761 19.0573C22.0261 18.8072 21.687 18.6667 21.3333 18.6667Z",
+  },
+  {
+    id: 3,
+    title: "Desarrollo Frontend & Móvil",
+    description:
+      "Creo interfaces modernas, intuitivas y responsivas con React, React Native y TailwindCSS. Busco que cada diseño comunique con claridad y ofrezca una experiencia fluida al usuario final.",
+    svgPath:
+      "M29.3333 9.65319C29.3343 9.47772 29.3007 9.30377 29.2343 9.14132C29.168 8.97887 29.0702 8.83111 28.9466 8.70653L23.2933 3.05319C23.1687 2.92962 23.021 2.83185 22.8585 2.7655C22.6961 2.69915 22.5221 2.66551 22.3466 2.66653C22.1712 2.66551 21.9972 2.69915 21.8348 2.7655C21.6723 2.83185 21.5246 2.92962 21.4 3.05319L17.6266 6.82653L3.05331 21.3999C2.92974 21.5244 2.83197 21.6722 2.76562 21.8347C2.69927 21.9971 2.66563 22.1711 2.66665 22.3465V27.9999C2.66665 28.3535 2.80712 28.6926 3.05717 28.9427C3.30722 29.1927 3.64636 29.3332 3.99998 29.3332H9.65331C9.83988 29.3433 10.0265 29.3142 10.2011 29.2475C10.3756 29.1809 10.5343 29.0784 10.6666 28.9465L25.16 14.3732L28.9466 10.6665C29.0683 10.5373 29.1675 10.3886 29.24 10.2265C29.2528 10.1202 29.2528 10.0128 29.24 9.90653C29.2462 9.84446 29.2462 9.78192 29.24 9.71986L29.3333 9.65319Z",
+  },
+  {
+    id: 4,
+    title: "Integración & Optimización",
+    description:
+      "Integro servicios de terceros, APIs REST, notificaciones push y sistemas de pago. Optimizo rendimiento, seguridad y despliegue con Docker, PM2 y Nginx para asegurar alta disponibilidad.",
+    svgPath:
+      "M28 18.6668H26.6666V9.3335C26.6666 8.27263 26.2452 7.25521 25.4951 6.50507C24.7449 5.75492 23.7275 5.3335 22.6666 5.3335H9.33329C8.27243 5.3335 7.25501 5.75492 6.50487 6.50507C5.75472 7.25521 5.33329 8.27263 5.33329 9.3335V18.6668H3.99996C3.64634 18.6668 3.3072 18.8073 3.05715 19.0574C2.8071 19.3074 2.66663 19.6465 2.66663 20.0002V22.6668C2.66663 23.7277 3.08805 24.7451 3.8382 25.4953C4.58834 26.2454 5.60576 26.6668 6.66663 26.6668H25.3333C26.3942 26.6668 27.4116 26.2454 28.1617 25.4953C28.9119 24.7451 29.3333 23.7277 29.3333 22.6668V20.0002C29.3333 19.6465 29.1928 19.3074 28.9428 19.0574C28.6927 18.8073 28.3536 18.6668 28 18.6668Z",
+  },
+];
+
+const WorkProcess = () => {
+  return (
+    <div
+      className="content grid xl:grid-cols-2 xl:items-center px-2 py-5 md:py-10 lg:py-25 xl:py-35 max-xxl:px-4"
+      id="work-process"
+    >
+      <div className="lg:pe-10 xl:pe-35.75 max-xs:mb-3 max-xl:mb-8">
+        <p className="section-title max-xl:text-center">Mi Proceso de Trabajo</p>
+        <p className="mt-6 mb-4 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
+          Mi enfoque combina el desarrollo técnico con la comprensión del negocio para ofrecer soluciones que generan impacto real. 
+          Me especializo en integrar diferentes tecnologías para crear sistemas completos y eficientes.
+        </p>
+        <p className="mt-6 md:text-[18px] text-sm font-normal max-xl:text-center text-gray-500">
+          Con experiencia en entornos corporativos y como freelance, he desarrollado la capacidad de adaptarme a diferentes necesidades y equipos de trabajo.
+        </p>
+      </div>
+
+      <div className="grid xs:grid-cols-2 justify-end my-2 w-fit mx-auto">
+        {workStepData.map((data, index) => (
+          <WorkSteps
+            data={data}
+            style={`max-xs:mt-3 p-4 sm:p-8 bg-white aspect-auto sm:max-w-96 ${
+              index % 2 == 1 ? "xs:ms-3 xs:mt-6 " : "xs:mb-6"
+            }`}
+            key={index}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default WorkProcess;
