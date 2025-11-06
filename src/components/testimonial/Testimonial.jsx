@@ -29,6 +29,27 @@ const testimonialData = [
     name: "Sebastian Ocampo",
     designation: "Software Engineer de ShippyPro",
   },
+  {
+    message:
+      "Andres is the kind of collaborative and skilled professional you hope to find on every project. His reliability ensured we never missed a deadline, and his technical versatility allowed him to contribute meaningfully to every part of our stack.",
+    quote: `What truly sets him apart is his openness; he actively seeks out and thoughtfully considers different perspectives and implementation strategies, making him a catalyst for innovation and team growth.`,
+    name: "Juventino Villegas",
+    designation: "Software Engineer at TechnologyPOS"
+  },
+  {
+    message:
+      "Andres Rendon es una persona muy dedicada, siempre busca hacer las cosas bien y se nota su pasión por lo que hace.",
+    quote: `Trabajar con él ha sido una experiencia muy positiva.`,
+    name: "Andres Sáenz",
+    designation: "Software Engineer at AOACOLOMBIA SAS"
+  },
+  {
+    message:
+      "Trabajar con Rendón ha sido una experiencia excelente. Es una persona comprometida, con gran capacidad para resolver problemas y aportar ideas innovadoras en cada proyecto.",
+    quote: "",
+    name: "James Navarro",
+    designation: "Software Engineer at AOACOLOMBIA SAS"
+  },
 ];
 
 const Testimonial = () => {
